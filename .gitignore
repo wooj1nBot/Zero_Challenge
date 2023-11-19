@@ -17,3 +17,4 @@ local.properties
 # Project exclude paths
 /app/src/main/res/values/strings.xml
 /app/google-services.json
+/app/src/main/assets/zerochallenge-a5f9f-88e03471d9c5.json
