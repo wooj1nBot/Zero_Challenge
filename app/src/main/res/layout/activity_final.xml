@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBF3"
+    tools:context=".FinalActivity">
+
+    <ImageView
+        android:id="@+id/season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/summer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cafe24oneprettynight"
+            android:paddingStart="30dp"
+            android:text="2023년 3월 24일 (금요일)"
+            android:textColor="#616161"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/cafe24ssukssuk"
+            android:gravity="center_horizontal"
+            android:text="오늘은 2 개중 2 개의 챌린지를 완료했어요"
+            android:textColor="#786557"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/main3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/cafe24ssukssuk"
+            android:gravity="center_horizontal"
+            android:text=".\n.\n."
+            android:textColor="#786557"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/cafe24ssukssuk"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10sp"
+            android:text="역시 너는 대단한 사람이구나 ! 너의 미래가 기대 돼"
+            android:textColor="#786557"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/back"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="25dp"
+                app:cardCornerRadius="25dp"
+                app:strokeColor="#786557"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:strokeWidth="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center"
+                    android:text="뒤로"
+                    android:textColor="#786557"
+                    android:textSize="22sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@id/back"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#786557"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center"
+                    android:text="완료"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

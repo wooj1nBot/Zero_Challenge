@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:cardBackgroundColor="#F1EAE4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iconname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cafe_surround"
+                android:gravity="center|center_horizontal"
+                android:text="광고제거"
+                android:textColor="#614F42"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_above="@id/iconname"
+                android:layout_centerInParent="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ad_off_48px"
+                app:tint="#842D2D" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cafe_surround"
+        android:gravity="center|center_horizontal"
+        android:text="300w"
+        android:textColor="#5F422D"
+        android:textSize="16sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/button"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#842D2D"
+        app:cardCornerRadius="25dp">
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/cafe_surround"
+            android:gravity="center"
+            android:text="구매하기"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

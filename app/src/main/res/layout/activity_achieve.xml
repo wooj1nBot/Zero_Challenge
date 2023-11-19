@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBF3"
+    tools:context=".StoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="false"
+                android:layout_toStartOf="@id/logout"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="onClick"
+                android:padding="10dp"
+                app:srcCompat="@drawable/store" />
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="onClick"
+                android:padding="12dp"
+                android:tint="@color/main"
+                app:srcCompat="@drawable/logout_48px" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="onClick"
+                app:srcCompat="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comicms"
+            android:gravity="center_horizontal"
+            android:text="Achievement"
+            android:textColor="#786557"
+            android:textSize="26sp" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:checked="true"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:paddingStart="5dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:text="줄이기"
+                android:textColor="@color/main"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:checked="false"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:paddingStart="5dp"
+                android:text="모으기"
+                android:textColor="@color/main"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+</RelativeLayout>

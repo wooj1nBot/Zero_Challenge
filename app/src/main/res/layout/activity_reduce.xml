@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBF3"
+    tools:context=".ReduceActivity">
+
+    <ImageView
+        android:id="@+id/season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/summer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cafe24oneprettynight"
+            android:paddingStart="30dp"
+            android:text="2023년 3월 24일 (금요일)"
+            android:textColor="#616161"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/cafe24ssukssuk"
+            android:gravity="center_horizontal"
+            android:text="나는 오늘 0원 챌린지 ‘줄이기’ 에 ___ 했어"
+            android:textColor="#AD3131"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ct_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center_horizontal"
+                    android:text="커피값"
+                    android:textColor="#AD3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/check" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#AD3131"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/ct_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center_horizontal"
+                    android:text="밥값"
+                    android:textColor="#AD3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/check" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#AD3131"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ct_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center_horizontal"
+                    android:text="술값"
+                    android:textColor="#AD3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/check" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#AD3131"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ct_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center_horizontal"
+                    android:text="교통비"
+                    android:textColor="#AD3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_4"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/check" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#AD3131"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ct_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center_horizontal"
+                    android:text="기타"
+                    android:textColor="#AD3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_5"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/check" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#AD3131"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/r"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ct_tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center_horizontal"
+                    android:text="모든곳 (줄이기)"
+                    android:textColor="#AD3131"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_6"
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/check" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/cafe24ssukssuk"
+                android:gravity="center_horizontal"
+                android:text=" 에서"
+                android:textColor="#AD3131"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_succ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ssukssuk"
+            android:gravity="center_horizontal"
+            android:text="0원 챌린지 성공!"
+            android:textColor="#AD3131"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/successview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ct_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="false"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="#786557"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cafe24ssukssuk"
+                        android:gravity="center"
+                        android:text="커피값"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ct_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginStart="20dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="#786557"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cafe24ssukssuk"
+                        android:gravity="center"
+                        android:text="밥값"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ct_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginStart="20dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="#786557"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cafe24ssukssuk"
+                        android:gravity="center"
+                        android:text="술값"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ct_4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="false"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="#786557"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cafe24ssukssuk"
+                        android:gravity="center"
+                        android:text="교통비"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ct_5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginStart="20dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="#786557"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cafe24ssukssuk"
+                        android:gravity="center"
+                        android:text="기타"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ct_6"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="false"
+                    android:layout_marginStart="20dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="#786557"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cafe24ssukssuk"
+                        android:gravity="center"
+                        android:text="모든곳"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/success"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="25dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#786557"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/tv_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center"
+                    android:text="성공 !"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fail"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#786557"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/tv_fail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center"
+                    android:text="실패..."
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/back"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="25dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="25dp"
+                app:strokeColor="#786557"
+                app:strokeWidth="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center"
+                    android:text="뒤로"
+                    android:textColor="#786557"
+                    android:textSize="22sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@id/back"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#786557"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/tv_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cafe24ssukssuk"
+                    android:gravity="center"
+                    android:text="다음"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
